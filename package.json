@@ -1,0 +1,14 @@
+{
+    "dependencies": {
+      "inquirer": "^8.2.4",
+      "express": "^4.17.1",
+      "mysql2": "^2.2.5"
+    },
+    "scripts": {
+      "test": "jest"
+    },
+    "devDependencies": {
+      "jest": "^24.9.0"
+    }
+  }
+  
