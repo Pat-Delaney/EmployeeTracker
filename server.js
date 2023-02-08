@@ -149,10 +149,7 @@ async function updateEmp(){
     }
   ])
   .then((response)=>{
-    let firstLast = response.updt_name.Split(' ');
-    let emp_first_name = firstLast[0];
-    let emp_last_name = firstLast[1];
-    db.query(`UPDATE employee SET employee_role = '${response.updt_title}' where emp_first_name = '${emp_first}',emp_last_name = '${emp_last}')`, function (err, results) {
+    db.query(`UPDATE employee SET emp_role = '${response.updt_title}' where emp_first_name = '${response.emp_first}' && emp_last_name = '${response.emp_last}'`, function (err, results) {
       !err ? handleReturn(`Success! ${response.emp_first} ${response.emp_last} updated!`): handleReturn(err);
     })
     
