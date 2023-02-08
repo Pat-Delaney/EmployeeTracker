@@ -2,7 +2,8 @@
     "dependencies": {
       "inquirer": "^8.2.4",
       "express": "^4.17.1",
-      "mysql2": "^2.2.5"
+      "mysql2": "^2.2.5",
+      "dotenv": "^8.2.0"
     },
     "scripts": {
       "test": "jest"
